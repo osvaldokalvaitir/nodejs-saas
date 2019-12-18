@@ -17,19 +17,10 @@ class TeamController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async index ({ request, response, view }) {
-  }
+  async index ({ auth }) {
+    const teams = await auth.user.teams().fetch()
 
-  /**
-   * Render a form to be used for creating a new team.
-   * GET teams/create
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
-   */
-  async create ({ request, response, view }) {
+    return teams
   }
 
   /**
@@ -40,7 +31,15 @@ class TeamController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async store ({ request, response }) {
+  async store ({ request, auth }) {
+    const data = request.only(['name'])
+
+    const team = await auth.user.teams().create({
+      ...data,
+      user_id: auth.user.id
+    })
+
+    return team
   }
 
   /**
@@ -52,19 +51,13 @@ class TeamController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async show ({ params, request, response, view }) {
-  }
+  async show ({ params, auth }) {
+    const team = await auth.user
+      .teams()
+      .where('teams.id', params.id)
+      .first()
 
-  /**
-   * Render a form to update an existing team.
-   * GET teams/:id/edit
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
-   */
-  async edit ({ params, request, response, view }) {
+    return team
   }
 
   /**
@@ -75,7 +68,18 @@ class TeamController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async update ({ params, request, response }) {
+  async update ({ params, request, auth }) {
+    const data = request.only(['name'])
+    const team = await auth.user
+    .teams()
+    .where('teams.id', params.id)
+    .first()
+
+    team.merge(data)
+
+    await team.save()
+
+    return team
   }
 
   /**
@@ -86,7 +90,13 @@ class TeamController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async destroy ({ params, request, response }) {
+  async destroy ({ params, auth }) {
+    const team = await auth.user
+    .teams()
+    .where('teams.id', params.id)
+    .first()
+
+    await team.delete()
   }
 }
 
