@@ -18,13 +18,13 @@ class DatabaseSeeder {
     const user = await User.create({
       name: 'Osvaldo Kalvaitir Filho',
       email: 'osvaldokalvaitir@outlook.com',
-      password: '123456',
-    });
+      password: '123456'
+    })
 
     await user.teams().create({
       name: 'Rocketseat',
       user_id: user.id
-    });
+    })
   }
 }
 

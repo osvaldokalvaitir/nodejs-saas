@@ -4,7 +4,7 @@
 const Model = use('Model')
 
 class Invite extends Model {
-  static boot() {
+  static boot () {
     super.boot()
 
     this.addHook('afterCreate', 'InviteHook.sendInvitationEmail')

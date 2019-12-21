@@ -18,13 +18,12 @@ class InvitationEmail {
       { team: team.name, user: user.name },
       message => {
         message
-          .to('cleiton@rocketseat.com.br')
-          .from('osvaldokalvaitir@outlook.com', 'Osvaldo | OmniStack')
-          .subject('Convite')
+          .to(email)
+          .from('osvaldokalvaitir@outlook.com', 'Osvaldo | Omnistack')
+          .subject(`Convite para o time ${team.name}`)
       }
     )
   }
 }
 
 module.exports = InvitationEmail
-

@@ -52,10 +52,7 @@ class TeamController {
    * @param {View} ctx.view
    */
   async show ({ params, auth }) {
-    const team = await auth.user
-      .teams()
-      .where('teams.id', params.id)
-      .first()
+    const team = await auth.user.teams().where('teams.id', params.id).first()
 
     return team
   }
@@ -70,10 +67,7 @@ class TeamController {
    */
   async update ({ params, request, auth }) {
     const data = request.only(['name'])
-    const team = await auth.user
-    .teams()
-    .where('teams.id', params.id)
-    .first()
+    const team = await auth.user.teams().where('teams.id', params.id).first()
 
     team.merge(data)
 
@@ -91,10 +85,7 @@ class TeamController {
    * @param {Response} ctx.response
    */
   async destroy ({ params, auth }) {
-    const team = await auth.user
-    .teams()
-    .where('teams.id', params.id)
-    .first()
+    const team = await auth.user.teams().where('teams.id', params.id).first()
 
     await team.delete()
   }
