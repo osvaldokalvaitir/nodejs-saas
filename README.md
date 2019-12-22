@@ -66,6 +66,8 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
 - [Adonis Lucid Slugify](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-lucid-slugify.md)
 
+- [Adonis Validator](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-validator.md)
+
 - [AdonisJs Cli](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-cli.md)
 
 - [AdonisJs Redis](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-redis.md)
