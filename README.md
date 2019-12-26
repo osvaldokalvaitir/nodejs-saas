@@ -60,6 +60,8 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
 ### Bibliotecas
 
+-[Adonis ACL](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/adonis-acl.md)
+
 - [Adonis Kue Provider](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/adonis-kue.md)
 
 - [Adonis Mail](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-mail.md)
