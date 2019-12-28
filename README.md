@@ -10,7 +10,7 @@
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 ![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
 
-Aplicação usando Node.js, AdonisJs e ESLint.
+Aplicação usando Node.js, AdonisJs, Adonis ACL, Adonis Kue Provider, Adonis Mail, Adonis Lucid Slugify, Adonis Validator, AdonisJs Redis, ESLint e pg.
 
 ## Índice
 
@@ -60,7 +60,7 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
 ### Bibliotecas
 
--[Adonis ACL](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/adonis-acl.md)
+- [Adonis ACL](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/adonis-acl.md)
 
 - [Adonis Kue Provider](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/adonis-kue.md)
 
@@ -86,13 +86,61 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
     - Sessões
 
+      - Adiciona novas sessões
+
+    - Usuários
+
+      - Adiciona novos usuários
+
     - Times
+
+      - Lista todos os times
+
+      - Adiciona novos times
+
+      - Lista somente dados de um time
+
+      - Edita dados de um time
+
+      - Exclui um time
+
+    - Convites
+
+      - Adiciona novos convites para um time
+
+    - Projetos
+
+      - Lista todos os projetos de um time
+
+      - Adiciona novos projetos para um time
+
+      - Lista somente dados de um projeto de um time
+
+      - Edita dados de um projeto de um time
+
+      - Exclui um projeto de um time
+
+    - Função
+
+      - Lista todas as funções
+
+    - Membros
+  
+      - Lista todos os membros de um time
+
+      - Edita dados de um mebro de um time
+
+    - Permissões
+
+      - Lista todas as funções e as permissões do membro de um time
 
 ### Ferramentas
 
 - [Docker](https://github.com/osvaldokalvaitir/projects-settings/blob/master/virtualization/docker/docker.md)
 
   - Imagem do PostgreSQL: [postgres](https://github.com/osvaldokalvaitir/projects-settings/blob/master/virtualization/docker/images/postgres.md)
+
+  - Imagem do Redis: [redis:alpine](https://github.com/osvaldokalvaitir/projects-settings/blob/master/virtualization/docker/images/redis-alpine.md)
 
 - [Insomnia](https://github.com/osvaldokalvaitir/projects-settings/blob/master/api/insomnia.md)
 
