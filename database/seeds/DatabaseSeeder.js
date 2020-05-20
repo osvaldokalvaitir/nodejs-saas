@@ -35,7 +35,7 @@ class DatabaseSeeder {
     })
 
     const admin = await Role.create({
-      slug: 'admnistrator',
+      slug: 'administrator',
       name: 'Admnistrador'
     })
 
