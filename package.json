@@ -1,9 +1,12 @@
 {
-  "name": "adonis-api-app",
+  "name": "nodejs-saas",
   "version": "4.1.0",
-  "adonis-version": "4.1.0",
-  "description": "Adonisjs boilerplate for API server with pre-configured JWT",
   "main": "index.js",
+  "repository": "https://github.com/osvaldokalvaitir/nodejs-saas.git",
+  "author": "osvaldokalvaitir <osvaldokalvaitir@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "adonis-version": "4.1.0",
   "scripts": {
     "start": "node server.js",
     "test": "node ace test"
@@ -12,9 +15,6 @@
     "adonisjs",
     "adonis-app"
   ],
-  "author": "",
-  "license": "UNLICENSED",
-  "private": true,
   "dependencies": {
     "@adonisjs/ace": "^5.0.8",
     "@adonisjs/auth": "^3.0.7",
