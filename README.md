@@ -9,7 +9,7 @@
 </h3>
 
 <p align="center">
-  :gear: Application using Node.js, AdonisJs, Adonis ACL, Adonis Kue Provider, Adonis Mail, Adonis Lucid Slugify, Adonis Validator, AdonisJs Redis, ESLint and pg
+  :cloud: Application using Node.js, AdonisJs, Adonis ACL, Adonis Kue Provider, Adonis Mail, Adonis Lucid Slugify, Adonis Validator, AdonisJs Redis, ESLint and pg
 </p>
 
 <p align="center">
