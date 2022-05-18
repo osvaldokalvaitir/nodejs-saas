@@ -1,151 +1,66 @@
-# Node.js - SaaS
+<h1 align="center">
+    <img src="/.github/assets/logo.png"
+    width="200px"
+    alt="Logo" />
+</h1>
 
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/osvaldokalvaitir/nodejs-saas/blob/master/LICENSE)
-![](https://img.shields.io/github/package-json/v/osvaldokalvaitir/nodejs-saas.svg)
-![](https://img.shields.io/github/last-commit/osvaldokalvaitir/nodejs-saas.svg?color=red)
-![](https://img.shields.io/github/languages/top/osvaldokalvaitir/nodejs-saas.svg?color=yellow)
-![](https://img.shields.io/github/languages/count/osvaldokalvaitir/nodejs-saas.svg?color=lightgrey)
-![](https://img.shields.io/github/languages/code-size/osvaldokalvaitir/nodejs-saas.svg)
-![](https://img.shields.io/github/repo-size/osvaldokalvaitir/nodejs-saas.svg?color=blueviolet)
-[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
-![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
+<h3 align="center">
+  Node.js - SaaS
+</h3>
 
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=SaaS&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fosvaldokalvaitir%2Fnodejs-saas%2Fmaster%2FInsomnia.json)
+<p align="center">
+  :gear: Application using Node.js, AdonisJs, Adonis ACL, Adonis Kue Provider, Adonis Mail, Adonis Lucid Slugify, Adonis Validator, AdonisJs Redis, ESLint and pg
+</p>
 
-Aplicação usando Node.js, AdonisJs, Adonis ACL, Adonis Kue Provider, Adonis Mail, Adonis Lucid Slugify, Adonis Validator, AdonisJs Redis, ESLint e pg.
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/osvaldokalvaitir/nodejs-saas.svg?color=00A83A">
 
-## Índice
+  <img alt="GitHub language top" src="https://img.shields.io/github/languages/top/osvaldokalvaitir/nodejs-saas.svg?color=00A83A">
 
-- [Desenvolvimento](#desenvolvimento)
+  <a href="https://kalvaitir.com/">
+    <img alt="Made by Kalvaitir" src="https://img.shields.io/badge/made%20by-Kalvaitir-00A83A">
+  </a>
 
-  - [Configuração do Ambiente](#configuração-do-ambiente)
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-00A83A">
+</p>
 
-  - [Instalação do Projeto](#instalação-do-projeto)
-  
-  - [Configuração das Variáveis de Ambiente](#configuração-das-variáveis-de-ambiente)
+<p align="center">
+  <a href="#wrench-install-and-run">Install and run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#memo-license">License</a>
+</p>
 
-  - [Execução do Projeto](#execução-do-projeto)
+## :wrench: Install and run
 
-  - [Execução da API](#execução-da-api)
+Open terminal:
 
-- [Utilizados no Projeto](#utilizados-no-projeto)
+```sh
+# Clone this repo
+git clone https://github.com/osvaldokalvaitir/nodejs-saas
 
-  - [Bibliotecas](#bibliotecas)
-  
-  - [APIs](#apis)
+# Entry in folder
+cd nodejs-saas
 
-  - [Ferramentas](#ferramentas)
+# Install deps with npm or yarn
+npm install | yarn
 
-## Desenvolvimento
+# Make a copy of the .env.example file, rename it to .env and change the variables according to your environment.
 
-### Configuração do Ambiente
+# Launch the app with npm or yarn
+npm start | yarn start
 
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/README.md) e siga `Configuração de Ambiente`.
+# Run API
+adonis serve --dev
+```
 
-### Instalação do Projeto
+Click to learn more about the tools used: [Insomnia](https://github.com/osvaldokalvaitir/awesome/blob/main/src/api-clients/insomnia/insomnia.md), [Docker](https://github.com/osvaldokalvaitir/awesome/blob/main/src/containers/docker/docker.md), [PostgreSQL Docker Image postgres](https://github.com/osvaldokalvaitir/awesome/blob/main/src/containers/docker/images/postgres.md), [Redis Docker Image redis:alpine](https://github.com/osvaldokalvaitir/awesome/blob/main/src/containers/docker/images/redis-alpine.md), [Mailtrap](https://github.com/osvaldokalvaitir/awesome/blob/main/src/emails/mailtrap.md), [Postbird](https://github.com/osvaldokalvaitir/awesome/blob/main/src/sgdbs/postgresql/postbird.md).
 
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/nodejs.md) e siga `Instalação de Projeto`.
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=SaaS&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fosvaldokalvaitir%2Fnodejs-saas%2Fmain%2FInsomnia.json)
 
-### Configuração das Variáveis de Ambiente
+## :memo: License
 
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/dotenv.md) e siga `Configuração de Variáveis de Ambiente`.
+This project is under the MIT license. See [LICENSE](/LICENSE) for more information.
 
-### Execução do Projeto
+---
 
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/nodejs.md) e siga `Execução de Projeto para Produção`.
-
-### Execução da API
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-cli.md) e siga `Execução de API para Desenvolvimento` ou `Execução de API para Produção`.
-
-## Utilizados no Projeto
-
-### Bibliotecas
-
-- [Adonis ACL](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/adonis-acl.md)
-
-- [Adonis Kue Provider](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/adonis-kue.md)
-
-- [Adonis Mail](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-mail.md)
-
-- [Adonis Lucid Slugify](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-lucid-slugify.md)
-
-- [Adonis Validator](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-validator.md)
-
-- [AdonisJs Cli](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-cli.md)
-
-- [AdonisJs Redis](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-redis.md)
-
-- [ESLint](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint.md)
-
-- [pg](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/pg.md)
-
-### APIs
-
-- **Interna**
-
-  - **Rotas**
-
-    - Sessões
-
-      - Adiciona novas sessões
-
-    - Usuários
-
-      - Adiciona novos usuários
-
-    - Times
-
-      - Lista todos os times
-
-      - Adiciona novos times
-
-      - Lista somente dados de um time
-
-      - Edita dados de um time
-
-      - Exclui um time
-
-    - Convites
-
-      - Adiciona novos convites para um time
-
-    - Projetos
-
-      - Lista todos os projetos de um time
-
-      - Adiciona novos projetos para um time
-
-      - Lista somente dados de um projeto de um time
-
-      - Edita dados de um projeto de um time
-
-      - Exclui um projeto de um time
-
-    - Função
-
-      - Lista todas as funções
-
-    - Membros
-  
-      - Lista todos os membros de um time
-
-      - Edita dados de um mebro de um time
-
-    - Permissões
-
-      - Lista todas as funções e as permissões do membro de um time
-
-### Ferramentas
-
-- [Docker](https://github.com/osvaldokalvaitir/projects-settings/blob/master/virtualization/docker/docker.md)
-
-  - Imagem do PostgreSQL: [postgres](https://github.com/osvaldokalvaitir/projects-settings/blob/master/virtualization/docker/images/postgres.md)
-
-  - Imagem do Redis: [redis:alpine](https://github.com/osvaldokalvaitir/projects-settings/blob/master/virtualization/docker/images/redis-alpine.md)
-
-- [Insomnia](https://github.com/osvaldokalvaitir/projects-settings/blob/master/api-client/insomnia.md)
-
-- [Mailtrap](https://github.com/osvaldokalvaitir/projects-settings/blob/master/email/mailtrap.md)
-
-- [Postbird](https://github.com/osvaldokalvaitir/projects-settings/blob/master/database/postgresql/postbird.md)
+<p align="center">
+Developed with 💚 by <a href="https://www.linkedin.com/in/osvaldokalvaitir">Osvaldo Kalvaitir Filho</a>
+</p>
