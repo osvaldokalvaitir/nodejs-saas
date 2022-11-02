@@ -45,7 +45,7 @@ npm install | yarn
 # Make a copy of the .env.example file, rename it to .env and change the variables according to your environment.
 
 # Launch the app with npm or yarn
-npm start | yarn start
+npm run start | yarn start
 
 # Run API
 adonis serve --dev
